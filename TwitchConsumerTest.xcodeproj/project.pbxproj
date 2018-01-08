@@ -18,13 +18,25 @@
 		77902BB12002DF4E00211168 /* TCMainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BB02002DF4E00211168 /* TCMainCollectionView.swift */; };
 		77902BB72002E5BE00211168 /* TCGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */; };
 		77902BB82002E5BE00211168 /* TCGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */; };
-		77902BBB2002EAE900211168 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBA2002EAE900211168 /* TwitchAPI.swift */; };
+		77902BBB2002EAE900211168 /* TCDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBA2002EAE900211168 /* TCDataSession.swift */; };
 		77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBD2002F0C300211168 /* TwitchModels.swift */; };
 		77902BC020031CAA00211168 /* CellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBF20031CAA00211168 /* CellProtocols.swift */; };
+		77902BCB2003359000211168 /* TwitchConsumerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BCA2003359000211168 /* TwitchConsumerTestTests.swift */; };
 		77A86FF42002B4C400279017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86FF32002B4C400279017 /* AppDelegate.swift */; };
 		77A86FFB2002B4C400279017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFA2002B4C400279017 /* Assets.xcassets */; };
 		77A86FFE2002B4C400279017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */; };
+		77F727CA2003527D00FA8AE3 /* TCMainViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F727C92003527D00FA8AE3 /* TCMainViewService.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		77902BCD2003359000211168 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 77A86FE82002B4C400279017 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 77A86FEF2002B4C400279017;
+			remoteInfo = TwitchConsumerTest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,19 +50,30 @@
 		77902BB02002DF4E00211168 /* TCMainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainCollectionView.swift; sourceTree = "<group>"; };
 		77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCGameCollectionViewCell.xib; sourceTree = "<group>"; };
-		77902BBA2002EAE900211168 /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
+		77902BBA2002EAE900211168 /* TCDataSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCDataSession.swift; sourceTree = "<group>"; };
 		77902BBD2002F0C300211168 /* TwitchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchModels.swift; sourceTree = "<group>"; };
 		77902BBF20031CAA00211168 /* CellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocols.swift; sourceTree = "<group>"; };
+		77902BC82003359000211168 /* TwitchConsumerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchConsumerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		77902BCA2003359000211168 /* TwitchConsumerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchConsumerTestTests.swift; sourceTree = "<group>"; };
+		77902BCC2003359000211168 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		77A86FF02002B4C400279017 /* TwitchConsumerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchConsumerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A86FF32002B4C400279017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		77A86FFA2002B4C400279017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A86FFD2002B4C400279017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77A86FFF2002B4C400279017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77F727C92003527D00FA8AE3 /* TCMainViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewService.swift; sourceTree = "<group>"; };
 		ACCEBF0386BE5095275FE93D /* Pods-TwitchConsumerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.release.xcconfig"; sourceTree = "<group>"; };
 		BAA1CBEBD70B2908D58BAC9F /* Pods-TwitchConsumerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		77902BC52003359000211168 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A86FED2002B4C400279017 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -105,7 +128,8 @@
 		77902BB92002EAB700211168 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				77902BBA2002EAE900211168 /* TwitchAPI.swift */,
+				77902BBA2002EAE900211168 /* TCDataSession.swift */,
+				77F727C92003527D00FA8AE3 /* TCMainViewService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -118,11 +142,21 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		77902BC92003359000211168 /* TwitchConsumerTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				77902BCA2003359000211168 /* TwitchConsumerTestTests.swift */,
+				77902BCC2003359000211168 /* Info.plist */,
+			);
+			path = TwitchConsumerTestTests;
+			sourceTree = "<group>";
+		};
 		77A86FE72002B4C400279017 = {
 			isa = PBXGroup;
 			children = (
 				77A86FF22002B4C400279017 /* TwitchConsumerTest */,
 				77902BA22002C97000211168 /* Podfile */,
+				77902BC92003359000211168 /* TwitchConsumerTestTests */,
 				77A86FF12002B4C400279017 /* Products */,
 				C6E938C589588560A6A59A15 /* Pods */,
 				D691552779A45A1398C3E683 /* Frameworks */,
@@ -133,6 +167,7 @@
 			isa = PBXGroup;
 			children = (
 				77A86FF02002B4C400279017 /* TwitchConsumerTest.app */,
+				77902BC82003359000211168 /* TwitchConsumerTestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -172,6 +207,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		77902BC72003359000211168 /* TwitchConsumerTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 77902BCF2003359000211168 /* Build configuration list for PBXNativeTarget "TwitchConsumerTestTests" */;
+			buildPhases = (
+				77902BC42003359000211168 /* Sources */,
+				77902BC52003359000211168 /* Frameworks */,
+				77902BC62003359000211168 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				77902BCE2003359000211168 /* PBXTargetDependency */,
+			);
+			name = TwitchConsumerTestTests;
+			productName = TwitchConsumerTestTests;
+			productReference = 77902BC82003359000211168 /* TwitchConsumerTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		77A86FEF2002B4C400279017 /* TwitchConsumerTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77A870022002B4C400279017 /* Build configuration list for PBXNativeTarget "TwitchConsumerTest" */;
@@ -202,6 +255,11 @@
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Adam Ake";
 				TargetAttributes = {
+					77902BC72003359000211168 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 77A86FEF2002B4C400279017;
+					};
 					77A86FEF2002B4C400279017 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -222,11 +280,19 @@
 			projectRoot = "";
 			targets = (
 				77A86FEF2002B4C400279017 /* TwitchConsumerTest */,
+				77902BC72003359000211168 /* TwitchConsumerTestTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		77902BC62003359000211168 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A86FEE2002B4C400279017 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -300,12 +366,21 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		77902BC42003359000211168 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77902BCB2003359000211168 /* TwitchConsumerTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		77A86FEC2002B4C400279017 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77902BBB2002EAE900211168 /* TwitchAPI.swift in Sources */,
+				77902BBB2002EAE900211168 /* TCDataSession.swift in Sources */,
 				77902BA62002D30400211168 /* TCMainViewController.swift in Sources */,
+				77F727CA2003527D00FA8AE3 /* TCMainViewService.swift in Sources */,
 				77902BAE2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift in Sources */,
 				77902BA92002D45800211168 /* TCNavigationViewController.swift in Sources */,
 				77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */,
@@ -317,6 +392,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		77902BCE2003359000211168 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 77A86FEF2002B4C400279017 /* TwitchConsumerTest */;
+			targetProxy = 77902BCD2003359000211168 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */ = {
@@ -330,6 +413,38 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		77902BD02003359000211168 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJB5AHZ8FR;
+				INFOPLIST_FILE = TwitchConsumerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AdamAke.TwitchConsumerTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitchConsumerTest.app/TwitchConsumerTest";
+			};
+			name = Debug;
+		};
+		77902BD12003359000211168 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = UJB5AHZ8FR;
+				INFOPLIST_FILE = TwitchConsumerTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = AdamAke.TwitchConsumerTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TwitchConsumerTest.app/TwitchConsumerTest";
+			};
+			name = Release;
+		};
 		77A870002002B4C400279017 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +587,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		77902BCF2003359000211168 /* Build configuration list for PBXNativeTarget "TwitchConsumerTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77902BD02003359000211168 /* Debug */,
+				77902BD12003359000211168 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		77A86FEB2002B4C400279017 /* Build configuration list for PBXProject "TwitchConsumerTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

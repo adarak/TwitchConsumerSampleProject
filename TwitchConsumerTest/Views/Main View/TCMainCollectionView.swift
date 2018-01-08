@@ -13,7 +13,7 @@ class TCMainCollectionView: UICollectionView {
     var topLevelResponse: TopLevelResponse?
     var viewsWereLaidOut = false
     
-    fileprivate enum Constants {
+    enum Constants {
         static let featuredCellReuseID = "TCTopFeaturedCollectionViewCell"
         static let regularGameCellReuseID = "TCGameCollectionViewCell"
     }

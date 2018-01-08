@@ -15,9 +15,10 @@ class TCMainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        TwitchAPI.getTopGames().then(on: .main) { [weak self] topLevelResponse -> Void in
+        let mainService = TCMainViewService(twitchAPISession: TCDataSession.shared)
+        mainService.getTopGames().then(on: .main) { [weak self] (topLevelResponse) -> Void in
             self?.collectionView.setup(topGamesResponse: topLevelResponse)
-        } .catch { (error) in
+        }.catch { (error) in
             print(error)
         }
     }
