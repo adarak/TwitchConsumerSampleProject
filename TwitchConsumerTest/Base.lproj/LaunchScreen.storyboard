@@ -19,18 +19,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="TwitchConsumerLogo" translatesAutoresizingMaskIntoConstraints="NO" id="e07-Xg-oSI">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="guK-Qp-wQ0">
                                 <rect key="frame" x="0.0" y="127.5" width="375" height="232"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" secondItem="e07-Xg-oSI" secondAttribute="height" multiplier="1.6181" id="ULl-Rb-cZ3"/>
+                                    <constraint firstAttribute="width" secondItem="guK-Qp-wQ0" secondAttribute="height" multiplier="1.6181" id="wmt-aZ-XyJ"/>
                                 </constraints>
-                            </imageView>
+                                <color key="tintColor" red="0.49877301211400427" green="0.32760356493304293" blue="0.68486052780233797" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="TwitchConsumerLogo"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.10980392156862745" green="0.16078431372549018" blue="0.1764705882352941" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="e07-Xg-oSI" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="0ht-xW-Fmd"/>
-                            <constraint firstItem="e07-Xg-oSI" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="EJW-n9-HhR"/>
-                            <constraint firstItem="e07-Xg-oSI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="MoI-jj-dx5"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="guK-Qp-wQ0" secondAttribute="trailing" id="T5V-ke-EX8"/>
+                            <constraint firstItem="guK-Qp-wQ0" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="nNx-gy-RzK"/>
+                            <constraint firstItem="guK-Qp-wQ0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="yTX-jI-6xB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

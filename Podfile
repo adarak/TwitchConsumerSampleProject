@@ -4,4 +4,5 @@ target 'TwitchConsumerTest' do
     use_frameworks!
 
     pod 'PromiseKit'
+    pod 'Alamofire'
 end

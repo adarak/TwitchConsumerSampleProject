@@ -7,27 +7,45 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8A3047E9F30EB21507E1E8 /* Pods_TwitchConsumerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7CFDC909087F57BEAB1A02D9 /* Pods_TwitchConsumerTest.framework */; };
+		0FE621B4355092CA77521F7F /* Pods_TwitchConsumerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */; };
 		77902BA12002C44600211168 /* apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA02002C44600211168 /* apikey.plist */; };
 		77902BA32002C97000211168 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA22002C97000211168 /* Podfile */; };
+		77902BA62002D30400211168 /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BA42002D30400211168 /* TCMainViewController.swift */; };
+		77902BA72002D30400211168 /* TCMainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA52002D30400211168 /* TCMainViewController.xib */; };
+		77902BA92002D45800211168 /* TCNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BA82002D45800211168 /* TCNavigationViewController.swift */; };
+		77902BAE2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BAC2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift */; };
+		77902BAF2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77902BAD2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib */; };
+		77902BB12002DF4E00211168 /* TCMainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BB02002DF4E00211168 /* TCMainCollectionView.swift */; };
+		77902BB72002E5BE00211168 /* TCGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */; };
+		77902BB82002E5BE00211168 /* TCGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */; };
+		77902BBB2002EAE900211168 /* TwitchAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBA2002EAE900211168 /* TwitchAPI.swift */; };
+		77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBD2002F0C300211168 /* TwitchModels.swift */; };
+		77902BC020031CAA00211168 /* CellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBF20031CAA00211168 /* CellProtocols.swift */; };
 		77A86FF42002B4C400279017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86FF32002B4C400279017 /* AppDelegate.swift */; };
-		77A86FF62002B4C400279017 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86FF52002B4C400279017 /* ViewController.swift */; };
-		77A86FF92002B4C400279017 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FF72002B4C400279017 /* Main.storyboard */; };
 		77A86FFB2002B4C400279017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFA2002B4C400279017 /* Assets.xcassets */; };
 		77A86FFE2002B4C400279017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77902BA02002C44600211168 /* apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikey.plist; sourceTree = "<group>"; };
-		77902BA22002C97000211168 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		77902BA22002C97000211168 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		77902BA42002D30400211168 /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
+		77902BA52002D30400211168 /* TCMainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCMainViewController.xib; sourceTree = "<group>"; };
+		77902BA82002D45800211168 /* TCNavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCNavigationViewController.swift; sourceTree = "<group>"; };
+		77902BAC2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCTopFeaturedCollectionViewCell.swift; sourceTree = "<group>"; };
+		77902BAD2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCTopFeaturedCollectionViewCell.xib; sourceTree = "<group>"; };
+		77902BB02002DF4E00211168 /* TCMainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainCollectionView.swift; sourceTree = "<group>"; };
+		77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGameCollectionViewCell.swift; sourceTree = "<group>"; };
+		77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCGameCollectionViewCell.xib; sourceTree = "<group>"; };
+		77902BBA2002EAE900211168 /* TwitchAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchAPI.swift; sourceTree = "<group>"; };
+		77902BBD2002F0C300211168 /* TwitchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchModels.swift; sourceTree = "<group>"; };
+		77902BBF20031CAA00211168 /* CellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocols.swift; sourceTree = "<group>"; };
 		77A86FF02002B4C400279017 /* TwitchConsumerTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitchConsumerTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		77A86FF32002B4C400279017 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		77A86FF52002B4C400279017 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		77A86FF82002B4C400279017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		77A86FFA2002B4C400279017 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		77A86FFD2002B4C400279017 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		77A86FFF2002B4C400279017 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7CFDC909087F57BEAB1A02D9 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACCEBF0386BE5095275FE93D /* Pods-TwitchConsumerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.release.xcconfig"; sourceTree = "<group>"; };
 		BAA1CBEBD70B2908D58BAC9F /* Pods-TwitchConsumerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -37,13 +55,69 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8A3047E9F30EB21507E1E8 /* Pods_TwitchConsumerTest.framework in Frameworks */,
+				0FE621B4355092CA77521F7F /* Pods_TwitchConsumerTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		77902BAB2002D72E00211168 /* Top Featured Cell */ = {
+			isa = PBXGroup;
+			children = (
+				77902BAC2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift */,
+				77902BAD2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib */,
+			);
+			path = "Top Featured Cell";
+			sourceTree = "<group>";
+		};
+		77902BB22002DF5000211168 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				77902BB32002DF9A00211168 /* Main View */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		77902BB32002DF9A00211168 /* Main View */ = {
+			isa = PBXGroup;
+			children = (
+				77902BA82002D45800211168 /* TCNavigationViewController.swift */,
+				77902BA42002D30400211168 /* TCMainViewController.swift */,
+				77902BA52002D30400211168 /* TCMainViewController.xib */,
+				77902BB02002DF4E00211168 /* TCMainCollectionView.swift */,
+				77902BBF20031CAA00211168 /* CellProtocols.swift */,
+				77902BAB2002D72E00211168 /* Top Featured Cell */,
+				77902BB42002DFB100211168 /* Regular Game Cell */,
+			);
+			path = "Main View";
+			sourceTree = "<group>";
+		};
+		77902BB42002DFB100211168 /* Regular Game Cell */ = {
+			isa = PBXGroup;
+			children = (
+				77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */,
+				77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */,
+			);
+			path = "Regular Game Cell";
+			sourceTree = "<group>";
+		};
+		77902BB92002EAB700211168 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				77902BBA2002EAE900211168 /* TwitchAPI.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		77902BBC2002EAEC00211168 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				77902BBD2002F0C300211168 /* TwitchModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		77A86FE72002B4C400279017 = {
 			isa = PBXGroup;
 			children = (
@@ -66,12 +140,13 @@
 		77A86FF22002B4C400279017 /* TwitchConsumerTest */ = {
 			isa = PBXGroup;
 			children = (
+				77902BB92002EAB700211168 /* Services */,
+				77902BBC2002EAEC00211168 /* Models */,
+				77902BB22002DF5000211168 /* Views */,
 				77A86FF32002B4C400279017 /* AppDelegate.swift */,
-				77A86FF52002B4C400279017 /* ViewController.swift */,
-				77902BA02002C44600211168 /* apikey.plist */,
-				77A86FF72002B4C400279017 /* Main.storyboard */,
-				77A86FFA2002B4C400279017 /* Assets.xcassets */,
 				77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */,
+				77A86FFA2002B4C400279017 /* Assets.xcassets */,
+				77902BA02002C44600211168 /* apikey.plist */,
 				77A86FFF2002B4C400279017 /* Info.plist */,
 			);
 			path = TwitchConsumerTest;
@@ -89,7 +164,7 @@
 		D691552779A45A1398C3E683 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7CFDC909087F57BEAB1A02D9 /* Pods_TwitchConsumerTest.framework */,
+				4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -156,11 +231,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				77902BA72002D30400211168 /* TCMainViewController.xib in Resources */,
 				77902BA32002C97000211168 /* Podfile in Resources */,
 				77A86FFE2002B4C400279017 /* LaunchScreen.storyboard in Resources */,
+				77902BAF2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib in Resources */,
+				77902BB82002E5BE00211168 /* TCGameCollectionViewCell.xib in Resources */,
 				77902BA12002C44600211168 /* apikey.plist in Resources */,
 				77A86FFB2002B4C400279017 /* Assets.xcassets in Resources */,
-				77A86FF92002B4C400279017 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,10 +266,12 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,22 +304,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				77A86FF62002B4C400279017 /* ViewController.swift in Sources */,
+				77902BBB2002EAE900211168 /* TwitchAPI.swift in Sources */,
+				77902BA62002D30400211168 /* TCMainViewController.swift in Sources */,
+				77902BAE2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift in Sources */,
+				77902BA92002D45800211168 /* TCNavigationViewController.swift in Sources */,
+				77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */,
 				77A86FF42002B4C400279017 /* AppDelegate.swift in Sources */,
+				77902BB12002DF4E00211168 /* TCMainCollectionView.swift in Sources */,
+				77902BB72002E5BE00211168 /* TCGameCollectionViewCell.swift in Sources */,
+				77902BC020031CAA00211168 /* CellProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		77A86FF72002B4C400279017 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				77A86FF82002B4C400279017 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -371,7 +449,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AdamAke.TwitchConsumerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -387,7 +465,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = AdamAke.TwitchConsumerTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
