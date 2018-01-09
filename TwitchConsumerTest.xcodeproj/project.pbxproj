@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		0FE621B4355092CA77521F7F /* Pods_TwitchConsumerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */; };
 		77898341200449D4000BFA95 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77898340200449D4000BFA95 /* UIImageView+Extensions.swift */; };
-		77898343200456B6000BFA95 /* example.gif in Resources */ = {isa = PBXBuildFile; fileRef = 77898342200456B6000BFA95 /* example.gif */; };
+		77898347200458D2000BFA95 /* example.gif in Resources */ = {isa = PBXBuildFile; fileRef = 77898346200458D2000BFA95 /* example.gif */; };
 		77902BA12002C44600211168 /* apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA02002C44600211168 /* apikey.plist */; };
 		77902BA32002C97000211168 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA22002C97000211168 /* Podfile */; };
 		77902BA62002D30400211168 /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BA42002D30400211168 /* TCMainViewController.swift */; };
@@ -43,7 +43,7 @@
 /* Begin PBXFileReference section */
 		4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77898340200449D4000BFA95 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
-		77898342200456B6000BFA95 /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
+		77898346200458D2000BFA95 /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
 		77902BA02002C44600211168 /* apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikey.plist; sourceTree = "<group>"; };
 		77902BA22002C97000211168 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		77902BA42002D30400211168 /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
@@ -158,7 +158,7 @@
 		77A86FE72002B4C400279017 = {
 			isa = PBXGroup;
 			children = (
-				77898342200456B6000BFA95 /* example.gif */,
+				77898346200458D2000BFA95 /* example.gif */,
 				77A86FF22002B4C400279017 /* TwitchConsumerTest */,
 				77902BC92003359000211168 /* TwitchConsumerTestTests */,
 				77A86FF12002B4C400279017 /* Products */,
@@ -306,10 +306,10 @@
 				77902BA72002D30400211168 /* TCMainViewController.xib in Resources */,
 				77902BA32002C97000211168 /* Podfile in Resources */,
 				77A86FFE2002B4C400279017 /* LaunchScreen.storyboard in Resources */,
+				77898347200458D2000BFA95 /* example.gif in Resources */,
 				77902BAF2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib in Resources */,
 				77902BB82002E5BE00211168 /* TCGameCollectionViewCell.xib in Resources */,
 				77902BA12002C44600211168 /* apikey.plist in Resources */,
-				77898343200456B6000BFA95 /* example.gif in Resources */,
 				77A86FFB2002B4C400279017 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
