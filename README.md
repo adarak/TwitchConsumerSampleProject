@@ -1,5 +1,4 @@
 # TwitchConsumerSampleProject
 TwitchConsumerExample
 
-![Example](https://i.imgur.com/3RsHKNp.gif)
-<img src="https://i.imgur.com/3RsHKNp.gif">
+![](https://github.com/adarak/TwitchConsumerSampleProject/blob/master/example.gif?raw=true)
