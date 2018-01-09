@@ -12,6 +12,6 @@ protocol SelfSizableCell {
     static func sizeFor(screenWidth: CGFloat) -> CGSize
 }
 
-protocol SelfPopulatingCell {
-    func setup(model: GameDetails)
+protocol SelfDesignableCell {
+    func setup(model: Game?)
 }

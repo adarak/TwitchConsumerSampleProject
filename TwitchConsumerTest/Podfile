@@ -5,4 +5,5 @@ target 'TwitchConsumerTest' do
 
     pod 'PromiseKit'
     pod 'Alamofire'
+    pod 'AlamofireImage'
 end

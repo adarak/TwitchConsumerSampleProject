@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0FE621B4355092CA77521F7F /* Pods_TwitchConsumerTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */; };
+		77898341200449D4000BFA95 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77898340200449D4000BFA95 /* UIImageView+Extensions.swift */; };
 		77902BA12002C44600211168 /* apikey.plist in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA02002C44600211168 /* apikey.plist */; };
 		77902BA32002C97000211168 /* Podfile in Resources */ = {isa = PBXBuildFile; fileRef = 77902BA22002C97000211168 /* Podfile */; };
 		77902BA62002D30400211168 /* TCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BA42002D30400211168 /* TCMainViewController.swift */; };
@@ -19,7 +20,7 @@
 		77902BB72002E5BE00211168 /* TCGameCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */; };
 		77902BB82002E5BE00211168 /* TCGameCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */; };
 		77902BBB2002EAE900211168 /* TCDataSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBA2002EAE900211168 /* TCDataSession.swift */; };
-		77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBD2002F0C300211168 /* TwitchModels.swift */; };
+		77902BBE2002F0C300211168 /* TCModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBD2002F0C300211168 /* TCModels.swift */; };
 		77902BC020031CAA00211168 /* CellProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BBF20031CAA00211168 /* CellProtocols.swift */; };
 		77902BCB2003359000211168 /* TwitchConsumerTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77902BCA2003359000211168 /* TwitchConsumerTestTests.swift */; };
 		77A86FF42002B4C400279017 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77A86FF32002B4C400279017 /* AppDelegate.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77898340200449D4000BFA95 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		77902BA02002C44600211168 /* apikey.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = apikey.plist; sourceTree = "<group>"; };
 		77902BA22002C97000211168 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		77902BA42002D30400211168 /* TCMainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewController.swift; sourceTree = "<group>"; };
@@ -51,7 +53,7 @@
 		77902BB52002E5BE00211168 /* TCGameCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCGameCollectionViewCell.swift; sourceTree = "<group>"; };
 		77902BB62002E5BE00211168 /* TCGameCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TCGameCollectionViewCell.xib; sourceTree = "<group>"; };
 		77902BBA2002EAE900211168 /* TCDataSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCDataSession.swift; sourceTree = "<group>"; };
-		77902BBD2002F0C300211168 /* TwitchModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchModels.swift; sourceTree = "<group>"; };
+		77902BBD2002F0C300211168 /* TCModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCModels.swift; sourceTree = "<group>"; };
 		77902BBF20031CAA00211168 /* CellProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellProtocols.swift; sourceTree = "<group>"; };
 		77902BC82003359000211168 /* TwitchConsumerTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TwitchConsumerTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		77902BCA2003359000211168 /* TwitchConsumerTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TwitchConsumerTestTests.swift; sourceTree = "<group>"; };
@@ -85,6 +87,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7789833F200449C0000BFA95 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				77898340200449D4000BFA95 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		77902BAB2002D72E00211168 /* Top Featured Cell */ = {
 			isa = PBXGroup;
 			children = (
@@ -92,14 +102,6 @@
 				77902BAD2002D74B00211168 /* TCTopFeaturedCollectionViewCell.xib */,
 			);
 			path = "Top Featured Cell";
-			sourceTree = "<group>";
-		};
-		77902BB22002DF5000211168 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				77902BB32002DF9A00211168 /* Main View */,
-			);
-			path = Views;
 			sourceTree = "<group>";
 		};
 		77902BB32002DF9A00211168 /* Main View */ = {
@@ -137,7 +139,7 @@
 		77902BBC2002EAEC00211168 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				77902BBD2002F0C300211168 /* TwitchModels.swift */,
+				77902BBD2002F0C300211168 /* TCModels.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,7 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				77A86FF22002B4C400279017 /* TwitchConsumerTest */,
-				77902BA22002C97000211168 /* Podfile */,
 				77902BC92003359000211168 /* TwitchConsumerTestTests */,
 				77A86FF12002B4C400279017 /* Products */,
 				C6E938C589588560A6A59A15 /* Pods */,
@@ -175,14 +176,16 @@
 		77A86FF22002B4C400279017 /* TwitchConsumerTest */ = {
 			isa = PBXGroup;
 			children = (
-				77902BB92002EAB700211168 /* Services */,
-				77902BBC2002EAEC00211168 /* Models */,
-				77902BB22002DF5000211168 /* Views */,
-				77A86FF32002B4C400279017 /* AppDelegate.swift */,
-				77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */,
-				77A86FFA2002B4C400279017 /* Assets.xcassets */,
 				77902BA02002C44600211168 /* apikey.plist */,
 				77A86FFF2002B4C400279017 /* Info.plist */,
+				77902BA22002C97000211168 /* Podfile */,
+				77A86FF32002B4C400279017 /* AppDelegate.swift */,
+				77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */,
+				7789833F200449C0000BFA95 /* Extensions */,
+				77902BB32002DF9A00211168 /* Main View */,
+				77902BBC2002EAEC00211168 /* Models */,
+				77902BB92002EAB700211168 /* Services */,
+				77A86FFA2002B4C400279017 /* Assets.xcassets */,
 			);
 			path = TwitchConsumerTest;
 			sourceTree = "<group>";
@@ -333,11 +336,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -380,10 +385,11 @@
 			files = (
 				77902BBB2002EAE900211168 /* TCDataSession.swift in Sources */,
 				77902BA62002D30400211168 /* TCMainViewController.swift in Sources */,
+				77898341200449D4000BFA95 /* UIImageView+Extensions.swift in Sources */,
 				77F727CA2003527D00FA8AE3 /* TCMainViewService.swift in Sources */,
 				77902BAE2002D74B00211168 /* TCTopFeaturedCollectionViewCell.swift in Sources */,
 				77902BA92002D45800211168 /* TCNavigationViewController.swift in Sources */,
-				77902BBE2002F0C300211168 /* TwitchModels.swift in Sources */,
+				77902BBE2002F0C300211168 /* TCModels.swift in Sources */,
 				77A86FF42002B4C400279017 /* AppDelegate.swift in Sources */,
 				77902BB12002DF4E00211168 /* TCMainCollectionView.swift in Sources */,
 				77902BB72002E5BE00211168 /* TCGameCollectionViewCell.swift in Sources */,

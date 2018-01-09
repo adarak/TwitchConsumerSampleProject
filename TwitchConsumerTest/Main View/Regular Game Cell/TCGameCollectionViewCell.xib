@@ -20,7 +20,7 @@
                 <rect key="frame" x="0.0" y="0.0" width="100" height="164"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 <subviews>
-                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smite" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-uS-2Jc">
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eqk-uS-2Jc">
                         <rect key="frame" x="0.0" y="0.0" width="100" height="150"/>
                         <color key="backgroundColor" red="0.1380853859" green="0.20219645789999999" blue="0.22192294160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -39,7 +39,7 @@
                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4P-x4-4fH">
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4P-x4-4fH">
                         <rect key="frame" x="82" y="155" width="18" height="9"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="Y4P-x4-4fH" secondAttribute="height" multiplier="2:1" id="jyf-Ia-Hu0"/>
@@ -63,11 +63,14 @@
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="128" height="350"/>
+            <connections>
+                <outlet property="imageView" destination="eqk-uS-2Jc" id="D9X-ga-7D9"/>
+                <outlet property="viewCountLabel" destination="gRZ-Fc-wWT" id="dox-eK-gXD"/>
+            </connections>
             <point key="canvasLocation" x="-118" y="-2"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="smite" width="133" height="200"/>
         <image name="viewersIcon" width="66" height="33"/>
     </resources>
 </document>

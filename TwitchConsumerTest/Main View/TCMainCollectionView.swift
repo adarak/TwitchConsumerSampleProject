@@ -10,7 +10,7 @@ import UIKit
 
 class TCMainCollectionView: UICollectionView {
     
-    var topLevelResponse: TopLevelResponse?
+    var topGames: TopGames?
     var viewsWereLaidOut = false
     
     enum Constants {
@@ -27,14 +27,17 @@ class TCMainCollectionView: UICollectionView {
             self.registerCells()
             
             DispatchQueue.main.async {
+                
+                self.contentInset = UIEdgeInsets(top: 0, left: 0, bottom: 16, right: 0)
+                
                 self.delegate = self
                 self.dataSource = self
             }
         }
     }
     
-    func setup(topGamesResponse: TopLevelResponse) {
-        self.topLevelResponse = topGamesResponse
+    func setup(topGames: TopGames) {
+        self.topGames = topGames
         
         DispatchQueue.main.async {
             self.reloadData()
@@ -51,7 +54,7 @@ class TCMainCollectionView: UICollectionView {
 extension TCMainCollectionView: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return topLevelResponse?.topGames.count ?? 0
+        return topGames?.games.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
@@ -70,14 +73,25 @@ extension TCMainCollectionView: UICollectionViewDelegate, UICollectionViewDataSo
         // First cell is featured cell
         if indexPath.item == 0 {
             if let featuredCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.featuredCellReuseID, for: indexPath) as? TCTopFeaturedCollectionViewCell {
+                featuredCell.setup(model: gameInfo(indexPath: indexPath))
                 return featuredCell
             }
         } else {
             if let gameCell = collectionView.dequeueReusableCell(withReuseIdentifier: Constants.regularGameCellReuseID, for: indexPath) as? TCGameCollectionViewCell {
+                gameCell.setup(model: gameInfo(indexPath: indexPath))
                 return gameCell
             }
         }
         
         return UICollectionViewCell()
+    }
+    
+    private func gameInfo(indexPath: IndexPath) -> Game? {
+        if let topGames = self.topGames {
+            if indexPath.item < topGames.games.count {
+                return topGames.games[indexPath.item]
+            }
+        }
+        return nil
     }
 }

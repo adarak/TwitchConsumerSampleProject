@@ -9,12 +9,14 @@
 import Foundation
 import PromiseKit
 import Alamofire
+import AlamofireImage
 
 protocol TwitchAPISession {
     
     // Promises?
     typealias DataResponseHandler = (Data?) -> ()
     func getData(url: String, dataResponseHandler: @escaping DataResponseHandler)
+    func getImage(urlString: String) -> Promise<Image>
 }
 
 class TCDataSession: TwitchAPISession {
@@ -63,6 +65,20 @@ class TCDataSession: TwitchAPISession {
         } else {
             dataResponseHandler(nil)
             print("🔑 MISSING API KEY")
+        }
+    }
+    
+    func getImage(urlString: String) -> Promise<Image> {
+        return Promise { fulfill, reject in
+            Alamofire.request(urlString).responseImage { response in
+                if let image = response.result.value {
+                    fulfill(image)
+                } else {
+                    if let error = response.error {
+                        reject(error)
+                    }
+                }
+            }
         }
     }
 }

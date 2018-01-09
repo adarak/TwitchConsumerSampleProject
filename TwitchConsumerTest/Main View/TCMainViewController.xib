@@ -13,6 +13,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TCMainViewController" customModule="TwitchConsumerTest" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="T2W-KI-3eu" id="lYq-Bu-7o7"/>
+                <outlet property="backgroundImage" destination="Zl4-mX-CXs" id="7Vt-N4-IjT"/>
                 <outlet property="collectionView" destination="B2c-dr-zLV" id="gTL-nH-bKz"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -35,13 +37,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="562.5"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                     </view>
-                    <color key="backgroundColor" red="0.34368134481917889" green="0.0" blue="0.71673659336419748" alpha="0.39471098542944788" colorSpace="custom" customColorSpace="sRGB"/>
-                    <blurEffect style="dark"/>
+                    <color key="backgroundColor" red="0.34368134481917889" green="0.0" blue="0.71673659336419748" alpha="0.25070695935582821" colorSpace="custom" customColorSpace="sRGB"/>
+                    <blurEffect style="light"/>
                 </visualEffectView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mainViewBackgroundGradient" translatesAutoresizingMaskIntoConstraints="NO" id="e0n-sI-Zv7">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="562.5"/>
                 </imageView>
-                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-dr-zLV" customClass="TCMainCollectionView" customModule="TwitchConsumerTest" customModuleProvider="target">
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" alpha="0.0" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="B2c-dr-zLV" customClass="TCMainCollectionView" customModule="TwitchConsumerTest" customModuleProvider="target">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="12" minimumInteritemSpacing="0.0" id="OuA-hf-BVV">
@@ -51,6 +53,9 @@
                         <inset key="sectionInset" minX="16" minY="16" maxX="16" maxY="0.0"/>
                     </collectionViewFlowLayout>
                 </collectionView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="T2W-KI-3eu">
+                    <rect key="frame" x="169" y="315" width="37" height="37"/>
+                </activityIndicatorView>
             </subviews>
             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
@@ -59,6 +64,8 @@
                 <constraint firstItem="B2c-dr-zLV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Eau-Kc-FHo"/>
                 <constraint firstItem="B2c-dr-zLV" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" id="GMo-SN-l8g"/>
                 <constraint firstItem="B2c-dr-zLV" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Gpo-H5-gYJ"/>
+                <constraint firstItem="T2W-KI-3eu" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="LKz-cw-LET"/>
+                <constraint firstItem="T2W-KI-3eu" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="Nxq-Bo-lM6"/>
                 <constraint firstItem="e0n-sI-Zv7" firstAttribute="bottom" secondItem="Zeq-w1-kbl" secondAttribute="bottom" id="Ou2-Q1-C3R"/>
                 <constraint firstItem="e0n-sI-Zv7" firstAttribute="leading" secondItem="Zeq-w1-kbl" secondAttribute="leading" id="PZ3-2r-4H2"/>
                 <constraint firstItem="Zeq-w1-kbl" firstAttribute="top" secondItem="Zl4-mX-CXs" secondAttribute="top" id="PkC-d1-0pb"/>
