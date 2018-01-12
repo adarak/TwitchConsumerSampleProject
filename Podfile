@@ -7,3 +7,11 @@ target 'TwitchConsumerTest' do
     pod 'Alamofire'
     pod 'AlamofireImage'
 end
+
+target 'TwitchConsumerTestTests' do
+    use_frameworks!
+    
+    pod 'PromiseKit'
+    pod 'Alamofire'
+    pod 'AlamofireImage'
+end

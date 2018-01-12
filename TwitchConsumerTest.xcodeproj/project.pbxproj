@@ -28,6 +28,7 @@
 		77A86FFB2002B4C400279017 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFA2002B4C400279017 /* Assets.xcassets */; };
 		77A86FFE2002B4C400279017 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */; };
 		77F727CA2003527D00FA8AE3 /* TCMainViewService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77F727C92003527D00FA8AE3 /* TCMainViewService.swift */; };
+		7B08EF8F168689C9017C162D /* Pods_TwitchConsumerTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D461D3F2CECEECF508AC70 /* Pods_TwitchConsumerTestTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		24CBDBE591D94D78673AEE3F /* Pods-TwitchConsumerTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTestTests/Pods-TwitchConsumerTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		34D461D3F2CECEECF508AC70 /* Pods_TwitchConsumerTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TwitchConsumerTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		77898340200449D4000BFA95 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 		7789834A20045AE3000BFA95 /* example.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = example.gif; sourceTree = "<group>"; };
@@ -68,6 +71,7 @@
 		77F727C92003527D00FA8AE3 /* TCMainViewService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TCMainViewService.swift; sourceTree = "<group>"; };
 		ACCEBF0386BE5095275FE93D /* Pods-TwitchConsumerTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.release.xcconfig"; sourceTree = "<group>"; };
 		BAA1CBEBD70B2908D58BAC9F /* Pods-TwitchConsumerTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest.debug.xcconfig"; sourceTree = "<group>"; };
+		CD457C35392A908BFF6239F7 /* Pods-TwitchConsumerTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TwitchConsumerTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TwitchConsumerTestTests/Pods-TwitchConsumerTestTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +79,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B08EF8F168689C9017C162D /* Pods_TwitchConsumerTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,6 +164,7 @@
 			isa = PBXGroup;
 			children = (
 				7789834A20045AE3000BFA95 /* example.gif */,
+				77902BA22002C97000211168 /* Podfile */,
 				77A86FF22002B4C400279017 /* TwitchConsumerTest */,
 				77902BC92003359000211168 /* TwitchConsumerTestTests */,
 				77A86FF12002B4C400279017 /* Products */,
@@ -181,7 +187,6 @@
 			children = (
 				77902BA02002C44600211168 /* apikey.plist */,
 				77A86FFF2002B4C400279017 /* Info.plist */,
-				77902BA22002C97000211168 /* Podfile */,
 				77A86FF32002B4C400279017 /* AppDelegate.swift */,
 				77A86FFC2002B4C400279017 /* LaunchScreen.storyboard */,
 				7789833F200449C0000BFA95 /* Extensions */,
@@ -198,6 +203,8 @@
 			children = (
 				BAA1CBEBD70B2908D58BAC9F /* Pods-TwitchConsumerTest.debug.xcconfig */,
 				ACCEBF0386BE5095275FE93D /* Pods-TwitchConsumerTest.release.xcconfig */,
+				24CBDBE591D94D78673AEE3F /* Pods-TwitchConsumerTestTests.debug.xcconfig */,
+				CD457C35392A908BFF6239F7 /* Pods-TwitchConsumerTestTests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -206,6 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				4DEF562A12F290CD4BBE0210 /* Pods_TwitchConsumerTest.framework */,
+				34D461D3F2CECEECF508AC70 /* Pods_TwitchConsumerTestTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -217,9 +225,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 77902BCF2003359000211168 /* Build configuration list for PBXNativeTarget "TwitchConsumerTestTests" */;
 			buildPhases = (
+				86B3A54A3E176E2B0D42012F /* [CP] Check Pods Manifest.lock */,
 				77902BC42003359000211168 /* Sources */,
 				77902BC52003359000211168 /* Frameworks */,
 				77902BC62003359000211168 /* Resources */,
+				53A12833746119125ECF376A /* [CP] Embed Pods Frameworks */,
+				1B895C8B51BB943AE87F979C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -317,6 +328,21 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		1B895C8B51BB943AE87F979C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTestTests/Pods-TwitchConsumerTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		29325DFD56F2ACBEBCD09BD0 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -330,6 +356,28 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		53A12833746119125ECF376A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTestTests/Pods-TwitchConsumerTestTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/PromiseKit/PromiseKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PromiseKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTestTests/Pods-TwitchConsumerTestTests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		81E4389459254C72864DED45 /* [CP] Embed Pods Frameworks */ = {
@@ -352,6 +400,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TwitchConsumerTest/Pods-TwitchConsumerTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		86B3A54A3E176E2B0D42012F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TwitchConsumerTestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		94341AEB227CDD89DE364EFB /* [CP] Check Pods Manifest.lock */ = {
@@ -425,6 +491,7 @@
 /* Begin XCBuildConfiguration section */
 		77902BD02003359000211168 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24CBDBE591D94D78673AEE3F /* Pods-TwitchConsumerTestTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -441,6 +508,7 @@
 		};
 		77902BD12003359000211168 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CD457C35392A908BFF6239F7 /* Pods-TwitchConsumerTestTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;

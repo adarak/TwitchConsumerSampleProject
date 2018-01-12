@@ -21,16 +21,22 @@ struct TCMainViewService {
     
     func getTopGames() -> Promise<TopGames> {
         return Promise { fulfill, reject in
-            twitchAPISession.getData(url: Constants.topGamesWithLimitURL, dataResponseHandler: { (data) in
-                if let data = data {
-                    let decoder = JSONDecoder()
-                    do {
-                        fulfill(try decoder.decode(TopGames.self, from: data))
-                    } catch let decodingError {
-                        reject(decodingError)
-                    }
+            twitchAPISession.getData(url: Constants.topGamesWithLimitURL).then(execute: { data -> Void in
+                if let decodedTopGames = self.topGamesDecoded(data: data) {
+                    fulfill(decodedTopGames)
                 }
+            }).catch(execute: { (error) in
+                reject(error)
             })
+        }
+    }
+    
+    private func topGamesDecoded(data: Data) -> TopGames? {
+        let decoder = JSONDecoder()
+        do {
+            return try decoder.decode(TopGames.self, from: data)
+        } catch _ {
+            return nil
         }
     }
     

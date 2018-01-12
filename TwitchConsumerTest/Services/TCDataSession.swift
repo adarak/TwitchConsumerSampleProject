@@ -13,9 +13,7 @@ import AlamofireImage
 
 protocol TwitchAPISession {
     
-    // Promises?
-    typealias DataResponseHandler = (Data?) -> ()
-    func getData(url: String, dataResponseHandler: @escaping DataResponseHandler)
+    func getData(url: String) -> Promise<Data>
     func getImage(urlString: String) -> Promise<Image>
 }
 
@@ -49,22 +47,26 @@ class TCDataSession: TwitchAPISession {
         return nil
     }
     
-    func getData(url: String, dataResponseHandler: @escaping DataResponseHandler) {
-        if let apiKey = self.apiKey() {
-            let headers: HTTPHeaders = [Constants.twitchHeaderIDKey: apiKey]
-            Alamofire.request(url, headers: headers).responseJSON(completionHandler: { (response) in
-                switch response.result {
-                case .success(_):
-                    if let data = response.data {
-                        dataResponseHandler(data)
+    func getData(url: String) -> Promise<Data> {
+        return Promise { fulfill, reject in
+            if let apiKey = self.apiKey() {
+                let headers: HTTPHeaders = [Constants.twitchHeaderIDKey: apiKey]
+                Alamofire.request(url, headers: headers).responseJSON(completionHandler: { (response) in
+                    switch response.result {
+                    case .success(_):
+                        if let data = response.data {
+                            fulfill(data)
+                        }
+                    case .failure(_):
+                        if let error = response.error {
+                            reject(error)
+                        }
                     }
-                case .failure(_):
-                    dataResponseHandler(nil)
-                }
-            })
-        } else {
-            dataResponseHandler(nil)
-            print("🔑 MISSING API KEY")
+                })
+            } else {
+                print("🔑 MISSING API KEY")
+                fatalError()
+            }
         }
     }
     
